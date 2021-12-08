@@ -1,0 +1,13 @@
+{
+  "name": "triage-tokengen-sample",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+      "generate:preprod-us": "BABYLON_ENV=preprod-us node index.js"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.2"
+  }
+}

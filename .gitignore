@@ -1,0 +1,7 @@
+.DS_Store
+keys
+node_modules
+.idea/
+
+# this file should not be checked in as it has private info
+conf.js

@@ -32,9 +32,9 @@ const getIdToken = () => {
         {
             algorithm: 'RS256',
             issuer: conf.issuer,
-            keyid: conf.keyId, // Public Key is stored against this uuid by Canvas Launcher
+            keyid: conf.keyId, // If omitted, defaults to Babylon Default.
         },
     )
 }
 
-console.log(`${conf.canvasUrl}/launch?flow=triage&client_id=${conf.clientId}&callback_url=triagesampleapp://callback#id_token=${getIdToken()}`)
+console.log(`${conf.canvasUrl}/launch?flow=triage&client_id=${conf.clientId}&callback_url=${conf.callbackUrl}#id_token=${getIdToken()}`)

@@ -9,7 +9,14 @@ Run `yarn install`
 ### Provision private keys
 
 1) Create a new folder called `keys`
-2) Save the private key file in `keys` with the name `<environment-region>.key`, e.g. `preprod-us.key`
+2) Generate private / public key pair
+```
+ssh-keygen -t rsa -b 4096 -m PEM -f keys/<YOUR_FILENAME>.key
+# Don't add passphrase
+openssl rsa -in keys/<YOUR_FIELNAE>.key -pubout -outform PEM -out <YOUR_FILENAME>.key.pub
+```
+3) Save the private key file in `keys` with the name `<environment-region>.key`, e.g. `preprod-us.key`
+   or symbolic link to it.
 
 ### Set Config vars
 

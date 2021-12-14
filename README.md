@@ -34,6 +34,17 @@ cat keys/<YOUR_FILENAME>.key.pub
 - Open that link in a browser to test authentication and initial launch
 - Once Canvas is working proceed to Mobile App Development
 
+## Server mode
+
+To run this in server mode
+
+### Command
+- Run `yarn start`
+- This starts a server at http://localhost:8000
+- In another window do the following:
+- `curl -s http://localhost:8000/url`
+- `curl -s http://localhsot:8000/tokenInfo | jq`
+
 ### Notes
 
 - Token expiration MUST be 30 seconds OR LESS

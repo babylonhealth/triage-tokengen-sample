@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
+      "start": "BABYLON_ENV=preprod-us node server.js",
       "generate:preprod-us": "BABYLON_ENV=preprod-us node index.js"
   },
   "dependencies": {

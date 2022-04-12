@@ -22,6 +22,13 @@ const requestListener = function (req, res) {
     }
 };
 
+// IMPORTANT NOTE! - **** PLEASE READ **** !!!!
+// THIS IS SAMPLE CODE ONLY
+// IN AN ACTUAL PRODUCTION SETTING, IT IS CONSIDERED BEST PRACTICE
+// TO PASS ANY SENSITIVE DATA OVER HTTP
+// THIS SAMPLE CODE IS INTENDED FOR DEMONSTRATIVE PURPOSES ONLY
+// AND IS NOT INTENDED FOR ANY REAL / PRODUCTION / HEALTH PURPOSES - AS-IS
+
 const server = http.createServer(requestListener);
 server.listen(port, host, () => {
     console.log(`Server is running on http://${host}:${port}`);

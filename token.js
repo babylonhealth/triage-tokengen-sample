@@ -31,7 +31,7 @@ const getIdToken = () => {
         readKeyFromFile(BABYLON_ENV),
         {
             algorithm: 'RS256',
-            issuer: conf.issuer,
+            issuer: conf.issuer, // required
             keyid: conf.keyId, // required
         },
     )

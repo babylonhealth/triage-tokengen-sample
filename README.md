@@ -56,3 +56,9 @@ To run this in server mode
 - Use a random UUID for `sub` if you do not want to expose the UUID externally.
   The random UUID can still be associated with this triage diagnostic session and
   stored as part of the partners patient EHR. (Or the whole session ID can be stored as well.)
+
+### IMPORTANT SECURITY / LEGAL COMMENTS
+THIS REPO IS PROVIDED AS-IS.  ANY PRODUCTION DEPLOYMENT DERIVED FROM THIS 
+REPO MUST TAKE CAREFUL PRECAUTIONS TO SAFELY TRANSFER SENSITIVE DATA SECURELY.
+THIS REPO IS NOT INTENDED TO TRANSFER SENSITIVE DATA - AS IS. 
+THIS REPO IS INTENDED FOR DEMONSTRATIVE USE ONLY. 

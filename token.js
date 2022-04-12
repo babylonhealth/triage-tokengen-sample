@@ -18,21 +18,21 @@ const getIdToken = () => {
 
     return jsonwebtoken.sign(
         {
-            address: { region: conf.region },
-            aud: conf.clientId, // Client ID
-            birthdate: '1994-01-01', // For anonymous use XXXX-01-01 - must be supplied
+            address: { region: conf.region }, // region is required
+            aud: conf.clientId, // client ID - required
+            birthdate: '1994-01-01', // required
             exp: timeIn30Seconds, // must be 30 seconds or less
-            gender: 'female', // sex_at_birth - must be supplied
-            given_name: 'Alex', // use anonymous name
-            family_name: 'Smith', // use anonymous name
+            gender: 'female', // sex_at_birth - required
+            given_name: 'Alex', // can be anonymous
+            family_name: 'Smith', // can be anonymous
             locale: 'en-US', // must be supplied
-            sub: uuidv4(), // User ID within the Partner system - random if this is to be anonymized
+            sub: uuidv4(), // The partner external user ID
         },
         readKeyFromFile(BABYLON_ENV),
         {
             algorithm: 'RS256',
             issuer: conf.issuer,
-            keyid: conf.keyId, // If omitted, defaults to Babylon Default.
+            keyid: conf.keyId, // required
         },
     )
 }

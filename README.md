@@ -16,7 +16,7 @@ ssh-keygen -t rsa -b 4096 -m PEM -f keys/<YOUR_FILENAME>.key
 openssl rsa -in keys/<YOUR_FIELNAME>.key -pubout -outform PEM -out keys/<YOUR_FILENAME>.key.pub
 cat keys/<YOUR_FILENAME>.key.pub
 ```
-3) Save the private key file in `keys` with the name `<environment-region>.key`, e.g. `preprod-us.key`
+3) Save the private key file in `keys` with the name `<environment-region>.key`, e.g. `prod-us.key`
    or symbolic link to it.
 
 ### Set Config vars

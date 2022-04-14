@@ -29,8 +29,8 @@ cat keys/<YOUR_FILENAME>.key.pub
 
 ### Command
 
-- Run `yarn generate:preprod-us`, and a token will be generated within 
-  a link to Canvas Launcher for **pre-prod**
+- Run `yarn generate:prod-us`, and a token will be generated within 
+  a link to Canvas Launcher for **prod**
 - Open that link in a browser to test authentication and initial launch
 - Once Canvas is working proceed to Mobile App Development
 

@@ -1,4 +1,4 @@
-# Triage Sample App Token
+# Triage TokenGen Sample
 
 ## Setup
 
